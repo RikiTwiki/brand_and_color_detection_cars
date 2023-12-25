@@ -22,7 +22,7 @@ learn.model_dir = ""
 
 learn = load_learner('export.pkl')
 
-learn.load("/home/sanarip03/Desktop/бренд_машин/Image-Classification-using-fastai-main/stage-1_v2")
+learn.load("/home/sanarip03/Desktop/бренд_машин/Image-Classification-using-fastai-main/model/stage-1_v2")
 
 def predict_image(image_path):
     # Open the image
