@@ -20,9 +20,9 @@ learn = cnn_learner(data, models.resnet18, model_dir='')
 learn.export(Path("/home/sanarip03/Desktop/бренд_машин/Image-Classification-using-fastai-main/export.pkl"))
 learn.model_dir = ""
 
-learn = load_learner('export.pkl')
+learn = load_learner('export_v2.pkl')
 
-learn.load("/home/sanarip03/Desktop/бренд_машин/Image-Classification-using-fastai-main/model/stage-1_v2")
+learn.load("stage-1_v2")
 
 def predict_image(image_path):
     # Open the image
@@ -42,4 +42,4 @@ def predict_image(image_path):
     img_resized.show()
 
 # Example usage
-predict_image('test_images/e30b8ff074b04f392dedbf49da9a8f28_640x480.jpg')
+predict_image('test_images/8f36e17a0c813db4b5b89f6287b5d97f_640x480.jpg')
