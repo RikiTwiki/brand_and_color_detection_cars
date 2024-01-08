@@ -15,7 +15,7 @@ from PIL import Image
 data = ImageDataLoaders.from_folder('../imgs_zip/imgs/train', train='.', valid_pct=0.2, 
                                    size=224, item_tfms=Resize(224))
 
-learn = load_learner('export_v2.pkl')
+learn = load_learner('export (3).pkl')
 
 def predict_image(image_path):
     # Open the image
@@ -35,4 +35,4 @@ def predict_image(image_path):
     img_resized.show()
 
 # Example usage
-predict_image('test_images/8f36e17a0c813db4b5b89f6287b5d97f_640x480.jpg')
+predict_image('test_images/1.jpg')
